@@ -8,6 +8,19 @@ Washington's start date is also an important consideration, about 2 months after
 
 Do we consider this the first "shutdown"?
 
+# Rough List
+| Year        | Days           |
+| ------------- |:-------------:|
+| 1980 | 1.0 |
+| 1981 | 1.0 |
+| 1984 | 0.5 |
+| 1986 | 0.5 |
+| 1990 | 3.0 |
+| 1995 | 21.0 |
+| 1996 | 6.0 |
+| 2013 | 16.0 |
+| 2018 | 3.0 |
+
 # Further reading
 https://en.wikipedia.org/wiki/List_of_United_States_federal_funding_gaps
 https://en.wikipedia.org/wiki/Government_shutdowns_in_the_United_States#List_of_federal_shutdowns

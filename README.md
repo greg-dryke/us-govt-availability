@@ -8,3 +8,8 @@ Washington's start date is also an important consideration, about 2 months after
 
 Do we consider this the first "shutdown"?
 
+# Further reading
+https://en.wikipedia.org/wiki/List_of_United_States_federal_funding_gaps
+https://en.wikipedia.org/wiki/Government_shutdowns_in_the_United_States#List_of_federal_shutdowns
+https://en.wikipedia.org/wiki/United_States_budget_process
+https://en.wikipedia.org/wiki/Congressional_Budget_and_Impoundment_Control_Act_of_1974

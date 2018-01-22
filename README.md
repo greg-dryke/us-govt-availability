@@ -20,6 +20,7 @@ Do we consider this the first "shutdown"?
 | 1996 | 6.0 |
 | 2013 | 16.0 |
 | 2018 | 3.0 |
+| **Total** | **52.0** |
 
 # Further reading
 https://en.wikipedia.org/wiki/List_of_United_States_federal_funding_gaps

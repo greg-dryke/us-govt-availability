@@ -9,6 +9,18 @@ body {
 body a {
   color: #809fff;
 }
+
+h1 {
+  font-size: 1.5em;
+}
+
+availability {
+  font-size: 3em;
+}
+
+footer {
+  font-size: .5em
+}
 }
  
 @media (prefers-color-scheme: light) {
@@ -19,5 +31,16 @@ body a {
 }
 a {
   color: #0033cc;
+}
+h1 {
+  font-size: 1.5em;
+}
+
+availability {
+  font-size: 3em;
+}
+
+footer {
+  font-size: .5em
 }
 }

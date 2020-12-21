@@ -14,6 +14,6 @@ days_down=$(curl -s $down_days_url)
 
 avail=$(perl -e "printf \"%.7f\", ((($days_since-$days_down) / $days_since) * 100.0000000)")
 
-color=$(perl -e "if ($avail >= 99.99){print 'green'} else {print 'red'}"
+color=$(perl -e "if ($avail >= 99.99){print 'green'} else {print 'red'}")
 
 echo $content | sed  s/%%AVAILABILITY%%/$avail/g | set s/%%color%%/$color/g > $index

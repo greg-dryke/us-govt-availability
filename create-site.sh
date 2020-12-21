@@ -16,4 +16,4 @@ avail=$(perl -e "printf \"%.7f\", ((($days_since-$days_down) / $days_since) * 10
 
 color=$(perl -e "if ($avail >= 99.99){print 'green'} else {print 'red'}")
 
-echo $content | sed  -e s/%%AVAILABILITY%%/$avail/g -e s/%%color%%/$color/g > $index
+echo "$content" | sed  -e s/%%AVAILABILITY%%/$avail/g -e s/%%color%%/$color/g > $index

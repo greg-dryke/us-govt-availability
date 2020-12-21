@@ -31,6 +31,7 @@ jobs:
         
       - name: Push new index  
         run: |
+          git diff
           if git diff --exit-code > /dev/null;
           then
             git config --global user.name 'Greg Dryke'

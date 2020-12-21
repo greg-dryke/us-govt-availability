@@ -8,6 +8,14 @@ h1 {
   font-size: 4em;
 }
 
+.red {
+  font-color: #fd0808;
+}
+
+.green {
+  font-color: #0aab35;
+}
+
 .footer {
   font-size: .5em
 }

@@ -1,6 +1,11 @@
 # us-govt-availability
 Calculating the availability of the US government.
 
+As of December 20th, 2020, it stands at `99.8969%`.
+It will take over 7 years to get to `99.90%`.
+- required days: `87/(1-.9990) = 87,000`
+- `87,000 - 84,390 = 2610 days` or `7 years and change`
+
 # Start date
 Nominally, the current US Government started on March 4, 1789. However, they didn't actually vote for another month due to lack of quorum (need an exact date). Also, they dubbed their first day of business as Dec 1 of that year. ([source](https://constitutioncenter.org/blog/march-4-a-forgotten-huge-day-in-american-politics))
 

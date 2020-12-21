@@ -2,6 +2,11 @@
 
 set -v
 
+if [ -z $(which gdate) ];
+then
+    alias gdate='date'
+fi
+
 template="index.html_template"
 index="index.html"
 down_days_url="https://raw.githubusercontent.com/greg-dryke/us-govt-availability/trunk/down_days.txt"

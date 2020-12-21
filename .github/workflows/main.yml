@@ -31,8 +31,7 @@ jobs:
         
       - name: Push new index  
         run: |
-          git diff
-          if git diff --exit-code > /dev/null;
+          if [ -n "$(git status --porcelain)" ]; then
           then
             git config --global user.name 'Greg Dryke'
             git config --global user.email 'greg.dryke@gmail.com'

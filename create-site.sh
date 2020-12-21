@@ -6,8 +6,8 @@ down_days_url="https://raw.githubusercontent.com/greg-dryke/us-govt-availability
 
 content=$(cat $template)
 
-now=$(date +%s)
-govt_start=$(date -d 'dec 1 1789' +%s)
+now=$(gdate +%s)
+govt_start=$(gdate -d 'dec 1 1789' +%s)
 days_since=$(( (now - govt_start) / 86400 ))
 
 days_down=$(curl -s $down_days_url)
@@ -16,4 +16,4 @@ avail=$(perl -e "printf \"%.7f\", ((($days_since-$days_down) / $days_since) * 10
 
 color=$(perl -e "if ($avail >= 99.99){print 'green'} else {print 'red'}")
 
-echo $content | sed  s/%%AVAILABILITY%%/$avail/g | set s/%%color%%/$color/g > $index
+echo $content | sed  -e s/%%AVAILABILITY%%/$avail/g -e s/%%color%%/$color/g > $index

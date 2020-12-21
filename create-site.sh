@@ -2,7 +2,7 @@
 
 set -v
 
-command -v gdate
+echo "Result: "$(command -v gdate)
 
 if ! command -v gdate &> /dev/null
 then

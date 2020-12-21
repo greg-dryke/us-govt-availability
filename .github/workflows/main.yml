@@ -32,7 +32,6 @@ jobs:
       - name: Push new index  
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-          then
             git config --global user.name 'Greg Dryke'
             git config --global user.email 'greg.dryke@gmail.com'
             git commit -am "Updating availability of US government"

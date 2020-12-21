@@ -2,7 +2,7 @@
 
 set -v
 
-if [ -z $(which gdate) ];
+if ! command -v gdate &> /dev/null
 then
     alias gdate='date'
 fi

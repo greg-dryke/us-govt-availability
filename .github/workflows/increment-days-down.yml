@@ -1,0 +1,39 @@
+name: Increment Days Down
+
+on:
+  schedule:
+    # Runs at midnight Eastern Time (5:00 UTC during EST, 4:00 UTC during EDT)
+    # Using 5:00 UTC to align with EST
+    - cron: "0 5 * * *"
+  
+  # Allows manual triggering for testing
+  workflow_dispatch:
+
+jobs:
+  increment-counter:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: trunk
+      
+      - name: Increment days down counter
+        run: |
+          current_value=$(cat down_days.txt)
+          new_value=$(echo "$current_value + 1" | bc)
+          echo "$new_value" > down_days.txt
+          echo "Updated down_days.txt from $current_value to $new_value"
+      
+      - name: Commit and push changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config --global user.name 'Greg Dryke'
+            git config --global user.email 'greg.dryke@gmail.com'
+            git add down_days.txt
+            git commit -m "Increment days_down counter"
+            git push
+          else
+            echo "No changes to commit"
+          fi

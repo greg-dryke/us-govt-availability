@@ -1,6 +1,8 @@
 # us-govt-availability
 Calculating the availability of the US government.
 
+Site: https://greg-dryke.github.io/us-govt-availability/
+
 As of December 20th, 2020, it stands at `99.8969%`.
 It will take over 7 years to get to `99.90%`.
 - required days: `87/(1-.9990) = 87,000`
